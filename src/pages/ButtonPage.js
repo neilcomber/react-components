@@ -4,7 +4,6 @@ import { HiBuildingLibrary, HiCloudArrowDown, HiGiftTop } from "react-icons/hi2"
 function ButtonPage() {
     
     const handleClick = () => {
-        console.log('click');
     }
     return <div>
         <div>
