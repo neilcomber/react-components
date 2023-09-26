@@ -1,5 +1,15 @@
 function Table({ data, config, keyFn }) {
     
+    const renderedHeaders = config.map((column) => {
+
+        if (column.header) {
+            return column.header();
+        }
+        return (
+            <th key={column.label}>{column.label}</th>
+        )
+    });
+
     const renderedRows = data.map((rowData) => {
 
         const renderedCells = config.map((column) => {
@@ -14,11 +24,7 @@ function Table({ data, config, keyFn }) {
 
     
 
-    const renderedHeaders = config.map((column) => {
-        return (
-            <th key={column.label}>{column.label }</th>
-        )
-    })
+    
     return (
         <table className="table-auto border-spacing-2">
             <thead>
