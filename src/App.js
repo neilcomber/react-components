@@ -5,11 +5,12 @@ import ButtonPage from './pages/ButtonPage';
 import ModalPage from './pages/ModalPage';
 import TablePage from './pages/TablePage';
 import Sidebar from './components/Sidebar';
+import CounterPage from './pages/CouterPage';
 
 function App() {
     return (
         <div className="container mx-auto grid grid-cols-6 gap-4 mt-4">
-            <Sidebar/> 
+            <Sidebar /> 
             <div className="col-span-5">
                 <Route path='/accordion'>
                     <AccordionPage />
@@ -26,6 +27,10 @@ function App() {
                 <Route path='/table'>
                     <TablePage />
                 </Route>
+                <Route path='/counter'>
+                    <CounterPage count={10} />
+                </Route>
+                
 
                 
             </div>

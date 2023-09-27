@@ -26,6 +26,10 @@ function TablePage() {
             render: (fruit) => fruit.score, 
             sortValue: (fruit) => fruit.score
         },
+        {
+            label: 'Score Squared', 
+            render: (fruit) => fruit.score ** 2
+        }
     ];
 
     const keyFn = (fruit) => {
