@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-28T21:14:36.965Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="YMI6sxIHokyBJcsvcoSL" version="22.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-28T21:17:19.906Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="JEAdnHs52I0Nla3JVQcd" version="22.0.0" type="github">
   <diagram name="Page-1" id="v68bjZuM31bieONhX8QO">
     <mxGraphModel dx="1434" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -26,7 +26,7 @@
           <mxGeometry x="770" y="220" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="hSVm4hoZ0ws5-N1yhAHV-11" value="TablePage" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="910" y="220" width="120" height="60" as="geometry" />
+          <mxGeometry x="920" y="220" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="hSVm4hoZ0ws5-N1yhAHV-12" value="Accordian&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="180" y="360" width="120" height="60" as="geometry" />
@@ -41,10 +41,10 @@
           <mxGeometry x="770" y="360" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="hSVm4hoZ0ws5-N1yhAHV-17" value="Table" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="910" y="500" width="120" height="60" as="geometry" />
+          <mxGeometry x="920" y="500" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="hSVm4hoZ0ws5-N1yhAHV-18" value="SortableTable" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="910" y="360" width="120" height="60" as="geometry" />
+          <mxGeometry x="920" y="360" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="hSVm4hoZ0ws5-N1yhAHV-19" value="Panel" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="70" y="560" width="120" height="60" as="geometry" />
@@ -85,8 +85,8 @@
         </mxCell>
         <mxCell id="hSVm4hoZ0ws5-N1yhAHV-26" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="960" y="140" as="sourcePoint" />
-            <mxPoint x="960" y="220" as="targetPoint" />
+            <mxPoint x="970" y="140" as="sourcePoint" />
+            <mxPoint x="970" y="220" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="hSVm4hoZ0ws5-N1yhAHV-28" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
@@ -115,14 +115,14 @@
         </mxCell>
         <mxCell id="hSVm4hoZ0ws5-N1yhAHV-33" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="960" y="280" as="sourcePoint" />
-            <mxPoint x="960" y="360" as="targetPoint" />
+            <mxPoint x="970" y="280" as="sourcePoint" />
+            <mxPoint x="970" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="hSVm4hoZ0ws5-N1yhAHV-34" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="960" y="420" as="sourcePoint" />
-            <mxPoint x="960" y="500" as="targetPoint" />
+            <mxPoint x="970" y="420" as="sourcePoint" />
+            <mxPoint x="970" y="500" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="hSVm4hoZ0ws5-N1yhAHV-36" value="Button" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -152,7 +152,7 @@
         <mxCell id="hSVm4hoZ0ws5-N1yhAHV-46" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="590" y="140" as="sourcePoint" />
-            <mxPoint x="960" y="140" as="targetPoint" />
+            <mxPoint x="970" y="140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
