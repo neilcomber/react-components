@@ -1,22 +1,35 @@
+import { produce } from 'immer';
 import { useReducer } from 'react';
 import Button from "../components/Button";
 import Panel from '../components/Panel';
 
+const INCREMENT_COUNT = 'increment';
+const DECREMENT_COUNT = 'decrement';
+const SET_VALUE_TO_ADD = 'change-value-to-add';
+const ADD_VALUE_TO_COUNT = 'add-value-to-count';
+
 const reducer = (state, action) => {
-    if (action.type === 'increment') {
-        return {
-            ...state,
-            count: state.count + 1
-        };
-    }
-    if (action.type === 'change-value-to-add') {
-        return {
-            ...state,
-            valueToAdd: action.payload
-        };
+    switch (action.type) {
+        case INCREMENT_COUNT:
+            state.count = state.count + 1;
+            return;
+        case SET_VALUE_TO_ADD:
+           state.valueToAdd = action.payload
+            return;
+        case DECREMENT_COUNT:
+            state.count = state.count - 1;
+            return;
+        case ADD_VALUE_TO_COUNT:
+            state.count = state.count + state.valueToAdd;
+            state.valueToAdd = 0;
+            return;
+        default:
+            return;
     };
-    return state;
-};
+    
+    };
+    
+
 
  
 function CounterPage({ initialCount }) {
@@ -24,26 +37,28 @@ function CounterPage({ initialCount }) {
     // const [counter, setCounter] = useState(initialCount)
     // const [valueToAdd, setValueToAdd] = useState(0);
 
-    const [state, dispatch] = useReducer(reducer, {
+    const [state, dispatch] = useReducer(produce(reducer), {
         count: initialCount,
         valueToAdd: 0
     });
    
     const increment = () => {
         dispatch({
-            type: 'increment'
+            type: INCREMENT_COUNT
         });
     };
 
     const decrement = () => {
-        // setCounter(counter - 1);
+        dispatch({
+            type: DECREMENT_COUNT
+        });
     };
 
     const handleChange = (evt) => {
         const value = parseInt(evt.target.value) || 0;
 
         dispatch({
-            type: 'change-value-to-add',
+            type: SET_VALUE_TO_ADD,
             payload: value
         });
     };
@@ -51,6 +66,9 @@ function CounterPage({ initialCount }) {
     const handleSubmit = (evt) => {
         evt.preventDefault();
 
+        dispatch({
+            type: ADD_VALUE_TO_COUNT, 
+        })
         // setCounter(counter + valueToAdd);
         // setValueToAdd(0);
     }
